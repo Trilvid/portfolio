@@ -1,0 +1,19 @@
+{
+  "name": "portfolio",
+  "version": "1.0.0",
+  "description": "week 5 task for i4GZuri",
+  "main": "server.js",
+  "scripts": {
+    "start": "nodemon server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Trilvid/portfolio.git"
+  },
+  "author": "Divine Obinna",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Trilvid/portfolio/issues"
+  },
+  "homepage": "https://github.com/Trilvid/portfolio#readme"
+}

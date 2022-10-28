@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="shortcut icon" href="pix/logo.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" />
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500&display=swap');
+
+        :root{
+            --primary:#660033;
+            --sec: white;
+            --back: rgba(102, 0, 51,0.1);
+            --font: poppins;
+        }
+
+        body{
+            box-sizing: border-box;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+            margin: 0%;
+            padding: 0%;
+            background-color: var(--back);
+            color: #4d4d4d;
+        }
+
+        *{
+            margin: 0%;
+            padding: 0%;
+            box-sizing: border-box;
+        }
+
+        /* style for nav */
+        .nav {
+            width: 100%;
+            display: flex;
+            flex-direction: row;
+            background-color: var(--back);
+            box-shadow: 0px 0px 5px;
+        }
+
+        .nav span {
+            width: 10%;
+            margin-left: 10%;
+        }
+        
+        .nav span img {
+            width: 20%;
+            /* border: 1px solid red; */
+        }
+
+        .nav nav{
+            width: 35%;
+            margin-left: 40%;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+        }
+
+        .nav nav a{
+            color: var(--primary);
+            text-align: center;
+            text-transform: capitalize;
+            text-decoration: none;
+            margin-top: 3%;
+            font-weight: bold;
+            font-family: "poppins";
+            font-size: 1rem;
+        }
+
+        /* style for landing page */
+        .landing {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+        }
+
+        .landing .txt{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+
+        .landing div h1{
+            margin-top: 10%;
+            text-transform: capitalize;
+            font-size: 2rem;
+            color: #660033;
+        }
+
+        .landing div p {
+            width: 80%;
+            text-align: left;
+            text-transform: capitalize;
+            padding: 5px;
+            font-family: "poppins";
+            font-size: .9rem;
+        }
+
+
+        .landing .txt fieldset{
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+            line-height: 20px;
+            padding: 2px;
+            border: 0px;
+            border-left: 2px solid #660033;
+            padding-left: 2%;
+            text-transform: capitalize;
+        }
+
+        .landing .txt fieldset a{
+            color: #660033;
+            text-decoration: none;
+        }
+
+        .landing .txt span a {
+            color: #660033;
+            padding: 2%;
+            font-size: 1.7rem;
+        }
+
+        /* footer */
+        .footer {
+        width: 100%;
+        padding: 2%;
+        text-align: center;
+        text-transform: capitalize;
+        background-color: #660033;
+        color: var(--sec);
+        font-family: var(--font);
+        }
+
+        /* style for typed text */
+        .css-typing p {
+            border-right: .15em solid #660033;
+            font-family: "poppins";
+            font-size: 1rem;
+            white-space: nowrap;
+            overflow: hidden;
+            text-align: left;
+        }
+        .css-typing p:nth-child(1) {
+            width: 10.11em;
+            -webkit-animation: type 2s steps(40, end);
+            animation: type 2s steps(40, end);
+            -webkit-animation-fill-mode: forwards;
+            animation-fill-mode: forwards;
+        }
+        
+        .css-typing p:nth-child(2) {
+            width: 28.5em;
+            opacity: 0;
+            -webkit-animation: type2 2s steps(40, end);
+            animation: type2 2s steps(40, end);
+            -webkit-animation-delay: 2s;
+            animation-delay: 2s;
+            -webkit-animation-fill-mode: forwards;
+            animation-fill-mode: forwards;
+        }
+        
+        .css-typing p:nth-child(3) {
+            width: 15.11em;
+            opacity: 0;
+            -webkit-animation: type3 5s steps(20, end), blink .5s step-end infinite alternate;
+            animation: type3 5s steps(20, end), blink .5s step-end infinite alternate;
+            -webkit-animation-delay: 4s;
+            animation-delay: 4s;
+            -webkit-animation-fill-mode: forwards;
+            animation-fill-mode: forwards;
+        }
+        
+        @keyframes type {
+            0% {
+            width: 0;
+            }
+            99.9% {
+            border-right: .15em solid #660033;
+            }
+            100% {
+            border: none;
+            text-align: left;
+            
+            }
+        }
+        
+        @-webkit-keyframes type {
+            0% {
+            width: 0;
+            }
+            99.9% {
+            border-right: .15em solid #660033;
+            }
+            100% {
+            border: none;
+            text-align: left;
+            
+            }
+        }
+        
+        @keyframes type2 {
+            0% {
+            width: 0;
+            }
+            1% {
+            opacity: 1;
+            }
+            99.9% {
+            border-right: .15em solid #660033;
+            }
+            100% {
+            opacity: 1;
+            border: none;
+            text-align: left;
+            
+            }
+        }
+        
+        @-webkit-keyframes type2 {
+            0% {
+            width: 0;
+            }
+            1% {
+            opacity: 1;
+            }
+            99.9% {
+            border-right: .15em solid #660033;
+            }
+            100% {
+            opacity: 1;
+            border: none;
+            text-align: left;
+            text-indent: 2rem;
+            }
+        }
+        
+        @keyframes type3 {
+            0% {
+            width: 0;
+            }
+            1% {
+            opacity: 1;
+            }
+            100% {
+            opacity: 1;
+            text-align: left;
+            text-indent: 2rem;
+            }
+        }
+        
+        @-webkit-keyframes type3 {
+            0% {
+            width: 0;
+            }
+            1% {
+            opacity: 1;
+            }
+            100% {
+            opacity: 1;
+            text-align: left;
+            text-indent: 2rem;
+            }
+        }
+        
+        @keyframes blink {
+            50% {
+            border-color: transparent;
+            }
+        }
+        @-webkit-keyframes blink {
+            50% {
+            border-color: tranparent;
+            }
+        }
+
+
+    </style>
+</head>
+<body>
+    
+    <div class="nav">
+        <span>
+            <img src="pix/logo.png" alt="file not found" width="150px">
+        </span>
+
+        <nav>
+            <a href="/">home</a>
+            <a href="/about">about me</a>
+            <a href="/contact">contact me</a>
+        </nav>
+    </div>
+
+    <section class="landing">
+        <div class="txt">
+
+            <h1>hello dear 👋️</h1>
+            <div  class="css-typing">
+            <p> i am Divine Obinna, </p>
+            <p> and am still training with I4G x Zuri Training Cohort II.</p>
+              </div>
+
+        </div>
+
+        <div>
+            <img src="pix/Code typing-bro.png" alt="file not found" width="500">
+        </div>
+    </section>
+
+<!-- 2nd -->
+    <section class="landing">
+        <div>
+            <img src="pix/Developer activity-pana.png" alt="file not found" width="500">
+        </div>
+
+        <div class="txt">
+            <h1>languages i use </h1>
+            <p>i use html css and javascript for client side ie the front end </p>
+            <p>and uses php, mysql, laravel, nodejs and mongodb for the server side ie backend  </p>
+            <fieldset>
+                <a href="#"><i class="fa-brands fa-html5"></i> &nbsp html</a>
+                <a href="#"><i class="fa-brands fa-css3-alt"></i> &nbsp css</a>
+                <a href="#"><i class="fa-brands fa-js"></i> &nbsp javascript</a>
+                <a href="#"><i class="fa-brands fa-php"></i> &nbsp php</a>
+                <a href="#"><i class="fa-solid fa-database"></i> &nbsp mysql</a>
+                <a href="#"><i class="fa-brands fa-node-js"></i> &nbsp nodejs</a>
+                <a href="#"><i class="fa-brands fa-laravel"></i> &nbsp laravel</a>
+            </fieldset>
+        </div>
+    </section>
+
+<!-- 3rd -->
+    <section class="landing">
+         <div class="txt">
+            <h1>reach me on</h1>
+            <p>here are my social media handle, you can reach me through them</p>
+            <span>
+                <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+                <a href="https://wa.link/whys6h"><i class="fa-brands fa-whatsapp"></i></a>
+                <a href="https://twitter.com/@divine_nnanna2"><i class="fa-brands fa-twitter"></i></a>
+                <a href="#"><i class="fa-brands fa-telegram"></i></a>
+                <a href="mailto:divinennanna2@gmail.com"><i class="fas fa-envelope"></i></a>
+                <a href="https://github.com/Trilvid/" target="_blank"><i class="fa-brands fa-github"></i></a>
+            </span>
+        </div>
+
+        <div>
+            <img src="pix/Mobile Marketing-bro.png" alt="file not found" width="500">
+        </div>
+    </section>
+<br><br>
+    <div class="footer">
+        <p>2022 &copy; all right reserved</p>
+    </div>
+
+
+
+</body>
+</html>
